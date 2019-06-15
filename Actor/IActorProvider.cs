@@ -2,8 +2,8 @@ using System.Threading.Tasks;
 
 namespace Firepuma.Api.Abstractions.Actor
 {
-    public interface IActorProvider
+    public interface IActorProvider<TActor>
     {
-        Task<ActorUserIdentity> GetActor();
+        Task<TActor> GetActor();
     }
 }
